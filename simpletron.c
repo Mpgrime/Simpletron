@@ -3,7 +3,13 @@
   int memory [100];
   int counter;
   int isHalt;
+
+//dumps the entire mem array
+void dumpCode(int); 
+
+//takes args?
 int main(int argc, char** argv){
+    
     counter=0;
     isHalt=0;
     int myWord=0000;
@@ -154,6 +160,10 @@ int main(int argc, char** argv){
 	 }
     }
 }
+
+
+//dump code func
+//dumps mem when error
 void dumpCode(int myWord){
    int flip=0;
    int operationCode=0;
